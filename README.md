@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Blinkit Outlet Insights Dashboard
 
-## Getting Started
+🔗 **Live dashboard:** [kd-blinkit-dashboard.vercel.app](https://kd-blinkit-dashboard.vercel.app/)
 
-First, run the development server:
+💻 **GitHub repository:** [kunal-dushing/blinkit-dashboard](https://github.com/kunal-dushing/blinkit-dashboard)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+An interactive sales and outlet performance dashboard built to explore Blinkit-style grocery retail data. Compare sales, products, and store performance with filters for outlet location tier and key business metrics.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> **Demo data notice:** The figures in this dashboard are illustrative sample data for demonstration. They are not official Blinkit sales data.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Dashboard features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Key metrics:** total sales, average sales, items sold, and customer ratings
+- **Sales trends:** explore sales over time and compare outlet tiers
+- **Item analysis:** compare sales across grocery product categories
+- **Outlet performance:** review sales by outlet type, location tier, size, and establishment year
+- **Interactive filters:** adjust outlet tiers and the selected metric to update the dashboard
 
-## Learn More
+## Built with
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js and React
+- TypeScript
+- Recharts for charts
+- Lucide icons
+- GitHub for source control
+- Vercel for deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Run locally
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Install [Node.js](https://nodejs.org/) (LTS).
+2. Open a terminal in this project folder.
+3. Install dependencies:
 
-## Deploy on Vercel
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Start the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000).
+
+To create a production build locally, run `npm run build`.
+
+## Deployments
+
+Connect the `main` branch to Vercel to deploy the dashboard. Vercel detects Next.js and uses the project defaults. Update the live dashboard link at the top of this README if your Vercel project uses a different domain.
+
+## Project structure
+
+- `app/page.tsx` — dashboard layout, interactions, charts, and sample data
+- `app/globals.css` — colors, layout, and responsive styling
+- `app/layout.tsx` — document metadata and global styles
+- `next.config.ts` — Next.js configuration
+- `package.json` — dependencies and project scripts
